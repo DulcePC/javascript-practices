@@ -1,4 +1,5 @@
 const temperatureToday = 86;
+console.log("");
 if(temperatureToday === 86 ) {
     console.log("its damn to hot");
 } else {
