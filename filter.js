@@ -36,3 +36,12 @@ console.log("");
 console.log("clean the code")
 const canDrinkClean = ageFilter.filter(age => age > 18);
 console.log(canDrinkClean);
+console.log("");
+
+const ConfirmCategory = companiesFilter.filter(function(categorys) {
+  if ( categorys === "secretary") {
+   return true;
+  }
+})
+
+console.log(ConfirmCategory);
