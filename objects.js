@@ -11,7 +11,7 @@ const producto = {
     }
   },
   utilizar: function() {
-    console.log(`Bebe agua cerdo! ${nombre}`)
+    console.log(`Bebe agua cerdo! ${this.nombre}`)
   }
 }
 
@@ -73,3 +73,24 @@ console.log(resultado2);
 
 //This
 producto.utilizar();
+
+//Object Constructor
+// Object literal
+const sanValentin = {
+  fecha: "14 de febrero",
+  precio: 3000,
+  disponible: false
+}
+
+// object constructor
+function comprarRegalo(fecha, precio, disponible) {
+  this.fecha = fecha;
+  this.precio = precio;
+  this.disponible = disponible;
+}
+
+const regalo = new comprarRegalo("sabado 8","30 Dolares",true);
+console.log(regalo);
+console.log("");
+console.log(Object.keys(sanValentin));
+console.log(Object.entries(sanValentin));
