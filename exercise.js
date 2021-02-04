@@ -10,3 +10,11 @@ for (i = 0; i < sayMyName; i++) {
     console.log(myName)
 }
 console.log("");
+
+
+const miAyuda = 0;
+const tuTarea = 110;
+for (tarea = 0; tarea < tuTarea; tarea++) {
+  miAyuda[tarea];
+  console.log("te ayude: " + tarea + "veces");
+}
