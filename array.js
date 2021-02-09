@@ -24,8 +24,10 @@ console.log("");
 //The arr.join() method is used to join the elements of an array into a string. 
 console.log(groupKation.join(" "));
 console.log("");
-//Esto es agregar elementos al array
+//Esto es agregar elementos al array, al final
 groupKation.push("Ninoska");
+// agregar al inicia del array
+groupKation.unshift("ricardo");
 // Y con esto compruebas de que realmente se agrego al consultar la posicion del item agregado
 console.log(groupKation[4]);
 console.log("");
@@ -50,4 +52,13 @@ groupKation.forEach(function(groupKation, index){
     console.log(index, groupKation);
     numberOfRun++;
     console.log(numberOfRun);
-}) 
+})
+
+console.log("")
+const meses = ['enero', 'febrero', 'marzo','abril'];
+//cuanto mide el arreglo
+console.log(meses.length);
+console.log("")
+for(i=0; i < meses.length; i++) {
+    console.log(i)
+}
