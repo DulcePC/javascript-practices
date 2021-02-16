@@ -62,3 +62,69 @@ console.log("")
 for(i=0; i < meses.length; i++) {
     console.log(i)
 }
+
+const carrito = [];
+const producto = {
+    nombre: "queso",
+    precio: 400
+}
+
+const producto2 = {
+    nombre: "plato",
+    precio: 200
+}
+
+const perrito = {
+    nombre: "pancholo",
+    precio: "gratis"
+}
+
+//agregar elementos al carrito
+let resultado;
+resultado = [...carrito, producto];
+resultado = [...resultado, producto2];
+resultado = [...resultado, perrito];
+console.table(resultado);
+
+//eliminar elementos de un array
+//eliminar el ultimo elemento de un arreglo
+carrito.pop();
+console.table(carrito);
+//inicio del arreglo
+carrito.shift();
+console.log(carrito);
+
+//eliminar cualquier elemento
+carrito.slice(1,1);
+console.log(carrito)
+
+//destructuring
+const numeros = [10,20,30,40.50];
+const [primero , segundo, tercero] = numeros;
+console.log(primero);
+console.log(tercero);
+
+
+//forEach
+const carrito2 = [
+    { nombre: "queso" , precio: 300},
+    { nombre: "monitor" , precio: 2300},
+    { nombre: "pancho" , precio: "Gratis"}
+]
+
+carrito2.forEach(function(produtoDeCarrito2){
+    console.table(produtoDeCarrito2.nombre);
+})
+console.log("");
+//map
+carrito2.map(function(produtoDeCarrito2){
+    console.table(produtoDeCarrito2.nombre);
+})
+
+//la diferencia es que .map va a llenar una variable con un nuevo arreglo, es decir puedes crear una variable con map
+
+const nuevoArreglo = carrito2.map(function(produtoDeCarrito2){
+    return produtoDeCarrito2.nombre;
+})
+
+console.log(nuevoArreglo);
