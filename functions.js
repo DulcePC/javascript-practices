@@ -46,3 +46,83 @@ function saludar(nombre, apellido = 'no tiene apellido') { //nombre y apellido s
 
 saludar('dulce',"perez"); //argumentos
 saludar('dulce'); //parametros por default cuando en el parametro le agregas un valor, si falta un argumento al llamar la funcion
+
+console.log("");
+
+function restar(a,b) {
+    return a - b;
+}
+
+const resultado = restar(10 , 43);
+console.log(restar);
+console.log(resultado);
+
+console.log("");
+
+let total = 0;
+function agregarAlCarrito(precio) {
+    return total += precio;
+}
+
+function calcularImpuestos(total) {
+    return total * 1.15;
+}
+
+total = agregarAlCarrito(400);
+total = agregarAlCarrito(4400);
+
+console.log(total);
+
+const totalAlPagar = calcularImpuestos(total);
+
+console.log(totalAlPagar);
+
+//cuando un objeto tiene funciones estos se le conocen como metodos de propiedad
+const reproductor = {
+    reproducir: function(id) {
+        console.log(`Reproduciendo cancion numero ${id}`)
+    },
+    pausar: function(id) {
+        console.log(`pausando cancion numero ${id}`);
+    },
+    agregarCanciones: function(...nombres) {
+        var canciones = [];
+        canciones.push(nombres);
+        canciones.forEach(function(nombreDeLaCancion){
+            if(nombreDeLaCancion.length <= 1) {
+                console.log(`La cancion con el nombre: ${nombres} ha sido guardado`);
+            }
+            // } else {
+            //    console.log(`Las canciones con el nombre de: ${nombres} han sidos guardado`);
+            // }
+       });
+        if(prompt("desea guardar otra cancion?") == 'yes') {
+            prompt("introduzca una nueva cancion:")
+            canciones.push(nombres);
+            canciones.forEach(function(nombreDeLaCancion){
+                if(nombreDeLaCancion.length <= 1) {
+                    console.log(`La cancion con el nombre: ${nombres} ha sido guardado`);
+                } else {
+                    console.log(`Las canciones con el nombre de: ${nombres} han sidos guardado`);
+                }
+           });
+        } else {
+            console.log("proceso cancelado");
+        }
+    },
+    crearPlaylist: function() {
+        nombreDelAlbum = prompt("Introduzca nombre de su album");
+        if(nombreDelAlbum !== "") {
+            console.log(`El nombre de su album a sido exitosamente guardando como: ${nombreDelAlbum}`);
+            this.agregarCanciones(prompt("introduzca una cancion:"));
+        } else {
+            // console.log('El nombre de su album a sido guardado como album1');
+            // this.agregarCanciones(prompt("introduzca una cancion:"));
+            console.log("proceso cancelado");
+        }
+    }
+}
+
+reproductor.reproducir(49);
+reproductor.pausar(49)
+// reproductor.crearPlaylist("rock","the beach","afraid","red")

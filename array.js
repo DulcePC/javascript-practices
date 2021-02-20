@@ -122,7 +122,6 @@ carrito2.map(function(produtoDeCarrito2){
 })
 
 //la diferencia es que .map va a llenar una variable con un nuevo arreglo, es decir puedes crear una variable con map
-
 const nuevoArreglo = carrito2.map(function(produtoDeCarrito2){
     return produtoDeCarrito2.nombre;
 })
