@@ -91,24 +91,16 @@ const reproductor = {
         canciones.forEach(function(nombreDeLaCancion){
             if(nombreDeLaCancion.length <= 1) {
                 console.log(`La cancion con el nombre: ${nombres} ha sido guardado`);
-            }
-            // } else {
-            //    console.log(`Las canciones con el nombre de: ${nombres} han sidos guardado`);
-            // }
-       });
-        if(prompt("desea guardar otra cancion?") == 'yes') {
-            prompt("introduzca una nueva cancion:")
-            canciones.push(nombres);
-            canciones.forEach(function(nombreDeLaCancion){
-                if(nombreDeLaCancion.length <= 1) {
-                    console.log(`La cancion con el nombre: ${nombres} ha sido guardado`);
-                } else {
-                    console.log(`Las canciones con el nombre de: ${nombres} han sidos guardado`);
+                if(prompt("desea guardar otra cancion?") == 'yes') {
+                    if( prompt("introduzca una nueva cancion:") != "") {
+                        canciones.push(nombres);
+                        console.log(`Las canciones con el nombre de: ${nombres} han sidos guardado`)
+                    }
                 }
-           });
-        } else {
-            console.log("proceso cancelado");
-        }
+            } else {
+                console.log("proceso cancelado");
+            }
+       });
     },
     crearPlaylist: function() {
         nombreDelAlbum = prompt("Introduzca nombre de su album");
@@ -116,8 +108,6 @@ const reproductor = {
             console.log(`El nombre de su album a sido exitosamente guardando como: ${nombreDelAlbum}`);
             this.agregarCanciones(prompt("introduzca una cancion:"));
         } else {
-            // console.log('El nombre de su album a sido guardado como album1');
-            // this.agregarCanciones(prompt("introduzca una cancion:"));
             console.log("proceso cancelado");
         }
     }
