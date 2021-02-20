@@ -88,19 +88,7 @@ const reproductor = {
     agregarCanciones: function(...nombres) {
         var canciones = [];
         canciones.push(nombres);
-        canciones.forEach(function(nombreDeLaCancion){
-            if(nombreDeLaCancion.length <= 1) {
-                console.log(`La cancion con el nombre: ${nombres} ha sido guardado`);
-                if(prompt("desea guardar otra cancion?") == 'yes') {
-                    if( prompt("introduzca una nueva cancion:") != "") {
-                        canciones.push(nombres);
-                        console.log(`Las canciones con el nombre de: ${nombres} han sidos guardado`)
-                    }
-                }
-            } else {
-                console.log("proceso cancelado");
-            }
-       });
+        console.log(`La cancion con el nombre: ${nombres} ha sido guardado`);
     },
     crearPlaylist: function() {
         nombreDelAlbum = prompt("Introduzca nombre de su album");
