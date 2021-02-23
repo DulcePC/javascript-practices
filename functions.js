@@ -77,7 +77,9 @@ const totalAlPagar = calcularImpuestos(total);
 
 console.log(totalAlPagar);
 
+
 //cuando un objeto tiene funciones estos se le conocen como metodos de propiedad
+var canciones = [];
 const reproductor = {
     reproducir: function(id) {
         console.log(`Reproduciendo cancion numero ${id}`)
@@ -86,13 +88,12 @@ const reproductor = {
         console.log(`pausando cancion numero ${id}`);
     },
     agregarCanciones: function(...nombres) {
-        var canciones = [];
         canciones.push(nombres);
         console.log(`La cancion con el nombre: ${nombres} ha sido guardado`);
     },
     crearPlaylist: function() {
         nombreDelAlbum = prompt("Introduzca nombre de su album");
-        if(nombreDelAlbum !== "") {
+        if((nombreDelAlbum !== null) && (nombreDelAlbum !== "")) {
             console.log(`El nombre de su album a sido exitosamente guardando como: ${nombreDelAlbum}`);
             this.agregarCanciones(prompt("introduzca una cancion:"));
         } else {
@@ -103,4 +104,27 @@ const reproductor = {
 
 reproductor.reproducir(49);
 reproductor.pausar(49)
-// reproductor.crearPlaylist("rock","the beach","afraid","red")
+
+
+// arrow function
+//si es una sola linea lo puedo usar sin {}
+const aprendiendo = () => console.log("aprendiendo js");
+
+console.log("");
+aprendiendo();
+
+//forEach
+const carrito2 = [
+    { nombre: "queso" , precio: 300},
+    { nombre: "monitor" , precio: 2300},
+    { nombre: "pancho" , precio: "Gratis"}
+]
+
+carrito2.forEach((produtoDeCarrito2) => {
+    console.table(produtoDeCarrito2.nombre);
+})
+console.log("");
+//map
+carrito2.map((produtoDeCarrito2) => {
+    console.table(produtoDeCarrito2.nombre);
+})
