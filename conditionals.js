@@ -39,3 +39,35 @@ if(estadio === personLimit) {
     console.log("casi casi ya no entra nadie"); 
 }
 
+console.log("");
+const puntaje = 1000;
+
+if(puntaje == 1000) {
+    console.log("si es igual")
+} else {
+    console.log("no es igual")
+}
+
+// != comparar que sea diferente
+// === estrictamente igual
+
+//switch case
+
+const metodoDePago = "efectivo";
+
+switch(metodoDePago) {
+    case 'efectivo': 
+        pagar(); 
+        console.log("pagaste con efectivo"); 
+    break;
+    case 'cheque': 
+        console.log("pagaste con cheque"); 
+    break;
+    default: 
+        console.log("aun no soporto ese metodo de pago");
+    break;
+}
+
+function pagar() {
+    console.log("pagando...");
+}
