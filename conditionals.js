@@ -71,3 +71,19 @@ switch(metodoDePago) {
 function pagar() {
     console.log("pagando...");
 }
+
+console.log("");
+// && (and) "y" operator
+
+const usuario = true;
+const puedePagar = false;
+
+if ( usuario && puedePagar ) {
+    console.log("Si eres usuario y si puedes pagar")
+} else if(!usuario){
+    console.log("no eres usuario")
+}else if(!puedePagar){
+    console.log("no puede pagar")
+} else {
+    console.log("No, no puede comprar")
+}
