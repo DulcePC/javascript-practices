@@ -73,10 +73,11 @@ function pagar() {
 }
 
 console.log("");
+
 // && (and) "y" operator
 
 const usuario = true;
-const puedePagar = false;
+const puedePagar = true;
 
 if ( usuario && puedePagar ) {
     console.log("Si eres usuario y si puedes pagar")
@@ -86,4 +87,15 @@ if ( usuario && puedePagar ) {
     console.log("no puede pagar")
 } else {
     console.log("No, no puede comprar")
+}
+
+console.log("");
+// || (or) "o" operator
+const efectivo = true;
+const tarjeta = false;
+
+if(efectivo || tarjeta) {
+    console.log("adelante");
+} else {
+    console.log("stop");
 }
