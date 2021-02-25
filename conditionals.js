@@ -90,6 +90,7 @@ if ( usuario && puedePagar ) {
 }
 
 console.log("");
+
 // || (or) "o" operator
 const efectivo = true;
 const tarjeta = false;
@@ -99,3 +100,8 @@ if(efectivo || tarjeta) {
 } else {
     console.log("stop");
 }
+
+console.log("");
+
+// ternarios
+console.log(efectivo ? "si tengo efectivo" : "no tengo efectivo")
