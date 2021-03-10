@@ -14,5 +14,11 @@ console.log("");
 companies.forEach(function(company){
   console.log(company.name);
   console.log(company);
+})
+console.log("");
 
+const pendientes = [ 'tarea', 'estudiar', 'ejercicio'];
+pendientes.forEach( (pendiente, index) => {
+  // console.log(pendiente);
+  console.log(`${index}: ${pendiente}`);
 })

@@ -16,3 +16,4 @@ console.log(companiesName);
 console.log("");
 const ageSquared = ageMap.map(age => Math.sqrt(age));
 console.log(ageSquared);
+//Diferencie entre foreach y map, map te crea una variable a diferencia de map
