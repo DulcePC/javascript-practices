@@ -109,7 +109,7 @@ console.log(tercero);
 const carrito2 = [
     { nombre: "queso" , precio: 300},
     { nombre: "monitor" , precio: 2300},
-    { nombre: "pancho" , precio: "Gratis"}
+    { nombre: "pancho" , precio: 500}
 ]
 
 carrito2.forEach(function(produtoDeCarrito2){
@@ -127,3 +127,93 @@ const nuevoArreglo = carrito2.map(function(produtoDeCarrito2){
 })
 
 console.log(nuevoArreglo);
+
+console.log("");
+const pendientes = [ 'tarea', 'estudiar', 'ejercicio'];
+const pendientes2 = ['leer', 'jugar'];
+
+//comprobar si un valor existe en un arreglo de indices
+pendientes.forEach((pendiente) => {
+    if(pendiente === 'tarea') {
+        console.log("tarea si existe")
+    }
+})
+//con array method
+const resultado2 = pendientes.includes('tarea');
+console.log(resultado2)
+
+//si quieres revisar si un  valor existe en un arreglo de objetos .some
+const existe = carrito2.some((producto) => {
+    return producto.nombre === 'celular';
+})
+console.log(existe);
+
+console.log("");
+//FindIndex: Saber en que indice de nuestro arreglo se encuentra un elemento
+pendientes.forEach((pendiente, index) => {
+    if(pendiente === 'ejercicio') {
+        console.log(index);
+    }
+})
+//con array method
+const indice = pendientes.findIndex((pendiente) => {
+    return pendiente === 'tarea';
+})
+console.log(indice);
+//comprobar un indice de un arreglo de objetos
+indiceDeObjetos = carrito2.findIndex((producto) => {
+    // return producto.nombre === 'estudiar'
+    return producto.nombre === 'monitor'
+});
+console.log(indiceDeObjetos);
+
+console.log("");
+//reduce
+let resultado3 = carrito2.reduce((total, producto) => total + producto.precio, 0);
+console.log(resultado3);
+
+console.log("");
+//Filter: va crearte un nuevo arreglo basado en el parametro que haz pasado
+const resultado4 = carrito2.filter((producto) => {
+    return producto.precio > 400;
+})
+console.log(resultado4);
+const resultado5 = carrito2.filter((producto) => {
+    return producto.nombre != 'pancho';
+})
+console.log(resultado5);
+
+console.log("");
+//Find: va crearte un nuevo arreglo basado en el condicion que estas realizando
+let resultado6 = '';
+carrito2.forEach((producto, index) => {
+    if(producto.nombre === 'pancho'){
+        resultado6 = carrito2[index];
+    }
+})
+console.log(resultado6);
+//con array method
+const resultado7 = carrito2.find( (producto) => {
+    return producto.nombre === 'monitor'
+})
+console.log(resultado7);
+
+console.log("");
+//Every: todos los elementos de un arreglo deben de cumplir esa conducion para que nos retorne un true
+const resultado8 = carrito2.every( (producto) => {
+    return producto.precio < 200;
+    //aqui no se cumple porque no todos los precios son menores a 200
+})
+//por eso imprime false
+console.log(resultado8);
+
+console.log("");
+//Concat: unir dos arreglos
+const resultado9 = pendientes.concat(pendientes2);
+console.log(resultado9);
+
+//spread operator
+const resultado10 = [...pendientes,...pendientes2];
+console.log(resultado10);
+
+console.log("");
