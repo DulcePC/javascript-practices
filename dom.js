@@ -34,3 +34,10 @@ imagen.style.height = '250px';
 const cardBody = document.querySelector('.card-body');
 console.log(cardBody);
 cardBody.classList.add('bg-info', 'd-flex');
+
+let elemento5 = document.querySelector('.card');
+console.log(elemento5);
+console.log(elemento5.childNodes); // cuenta los espacios como elementos html
+console.log(elemento5.children); // lo contrario
+console.log(elemento5.parentNode); // el padre del elemento
+
