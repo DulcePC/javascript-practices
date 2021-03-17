@@ -56,3 +56,20 @@ enlace.classList.add('bg-warning', 'p-2', 'd-block')
 //Mostrar enlace
 document.querySelector('.d-flex').appendChild(enlace);
 console.log(enlace);
+
+const btnFlotante = document.querySelector('.btn-flotante');
+const footer = document.querySelector('.footer');
+
+btnFlotante.addEventListener('click', toggleFooter);
+
+function toggleFooter() {
+  if(footer.classList.contains('activo')) {
+    footer.classList.remove('activo');
+    this.classList.remove('activo');
+    this.textContent = "Mostrar footer"
+  } else {
+    footer.classList.add('activo');
+    this.classList.add('activo');
+    this.textContent = "cerrar"
+  }
+}
