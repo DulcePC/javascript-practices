@@ -23,3 +23,23 @@ window.addEventListener('scroll', () => {
  const scrollY = window.scrollY;
  console.log(scrollY)
 })
+
+// event bubbling
+let elemento1 = document.querySelector('.card');
+let elemento2 = document.querySelector('.card-text');
+let elemento3 = document.querySelector('.card-title');
+
+elemento1.addEventListener('click', e => {
+  e.stopPropagation();
+  console.log("click elemento 1")
+})
+
+elemento2.addEventListener('click', e => {
+  e.stopPropagation();
+  console.log("click elemento 2")
+})
+
+elemento3.addEventListener('click', e => {
+  e.stopPropagation();
+  console.log("click elemento 3")
+})
