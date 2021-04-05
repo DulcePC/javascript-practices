@@ -18,3 +18,8 @@ form.addEventListener('submit', function(e) {
   console.log("Enviado");
 });
 
+window.addEventListener('scroll', () => {
+//  console.log("scrolling");
+ const scrollY = window.scrollY;
+ console.log(scrollY)
+})
