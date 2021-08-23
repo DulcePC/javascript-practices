@@ -21,7 +21,7 @@ console.log("");
 console.log(groupKation[3]);
 console.log("");
 //Esto es como agregar algo entre los elementos del arrary
-//The arr.join() method is used to join the elements of an array into a string. 
+//The arr.join() method is used to join the elements of  an array into a string. 
 console.log(groupKation.join(" "));
 console.log("");
 //Esto es agregar elementos al array, al final

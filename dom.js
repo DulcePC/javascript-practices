@@ -22,7 +22,7 @@ console.log("");
 let titulo = document.querySelector('h1');
 console.log(titulo);
 console.log(titulo.innerText);   // si en el css tiene un visibility hidden, este no lo va a encontrar
-console.log(titulo.textContent); // por el contrario este si y agregarlo
+console.log(titulo.textContent); // por el contrario este si y agregarlo ( para extraer el texto)
 console.log(titulo.innerHTML);   // este otro se trae el html
 
 console.log(titulo.textContent = 'Nuevo titulo');
@@ -57,7 +57,7 @@ enlace.target = "_blank";
 enlace.classList.add('bg-warning', 'p-2', 'd-block')
 //Mostrar enlace
 document.querySelector('.d-flex').appendChild(enlace);
-console.log(enlace);
+// console.log(enlace);
 
 const btnFlotante = document.querySelector('.btn-flotante');
 const footer = document.querySelector('.footer');
