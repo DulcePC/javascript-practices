@@ -1,15 +1,15 @@
 let dulce = 22;
 while(dulce <= 18) {
-    // console.log("tu no puede hacer lo que se te venga en gana no mi crazy im sorry");
+    console.log("tu no puede hacer lo que se te venga en gana no mi crazy im sorry");
 }
 
 let totalSerrucho = 10;
 for (serrucho = 0; serrucho < totalSerrucho; serrucho++ ) {
-    // console.log("ya tenemos pal wendy");
+    console.log("ya tenemos pal wendy");
 }
 
 for (let i = 0; i <= 20; i++) {
-    // console.log('numero' + ' ' + i);
+    console.log('numero' + ' ' + i);
 }
 
 // console.log("")
@@ -17,9 +17,9 @@ for (let i = 0; i <= 20; i++) {
 // console.log("pares y impares")
 for (let i = 0; i <= 20; i++) {
     if( i % 2 === 0 ) {
-        // console.log(`El numero ${i} es par`)
+        console.log(`El numero ${i} es par`)
     } else {
-        // console.log(`El numero ${i} es impar`)
+        console.log(`El numero ${i} es impar`)
     }
 }
 
@@ -29,7 +29,7 @@ for (let i = 0; i <= 20; i++) {
 //12
 for ( let i = 0; i <= 12; i++) {
     if( 12 % i === 0) {
-        // console.log(i)
+        console.log(i)
     }
 }
 
@@ -69,10 +69,10 @@ const carrito = [
 ]
 
 for ( i = 0; i < carrito.length; i++) {
-    // console.log(carrito[i])
+    console.log(carrito[i])
 
     if(carrito[i].descuento) {
-        // console.log(`El articulo: ${carrito[i].nombre} tiene descuento`)
+        console.log(`El articulo: ${carrito[i].nombre} tiene descuento`)
     }
 }
 // console.log("");
@@ -99,27 +99,26 @@ while (friendsYourParty < 10 ) {
     // console.log(friendsYourParty);
 }
 
-// console.log("");
+
 //Do while
 do {
     friendsYourParty++;
     // console.log(friendsYourParty);
 } while (friendsYourParty < 10);
+
 //for of
 //itera sobre arreglos
-// console.log("");
-
 const pendientes = [ 'tarea', 'estudiar', 'ejercicio'];
 for (let pendiente of pendientes) {
     // console.log(pendiente);
 }
 
-// console.log("");
 //for in
-//itera sobre objetos
+//itera sobre propiedades de un objetos
 for (let pendiente in pendientes) {
     // console.log(pendiente);
 }
+
 // console.log("");
 const automovil = {
     modelo: 'camaro',
