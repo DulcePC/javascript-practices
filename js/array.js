@@ -1,3 +1,4 @@
+
 const groupKation = [
     "Paul Jiminez",
     "Hector Herasme",
@@ -185,14 +186,14 @@ console.log(resultado5);
 
 console.log("");
 //Find: va crearte un nuevo arreglo basado en el condicion que estas realizando
-let resultado6 = '';
-carrito2.forEach((producto, index) => {
-    if(producto.nombre === 'pancho'){
-        resultado6 = carrito2[index];
-    }
-})
-console.log(resultado6);
-//con array method
+// let resultado6 = '';
+// carrito2.forEach((producto, index) => {
+//     if(producto.nombre === 'pancho'){
+//         resultado6 = carrito2[index];
+//     }
+// })
+// console.log(resultado6);
+
 const resultado7 = carrito2.find( (producto) => {
     return producto.nombre === 'monitor'
 })

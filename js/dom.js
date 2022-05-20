@@ -25,6 +25,8 @@ console.log(titulo.innerText);   // si en el css tiene un visibility hidden, est
 console.log(titulo.textContent); // por el contrario este si y agregarlo ( para extraer el texto)
 console.log(titulo.innerHTML);   // este otro se trae el html
 
+
+
 console.log(titulo.textContent = 'Nuevo titulo');
 
 let imagen = document.querySelector('img');
