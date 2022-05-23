@@ -6,6 +6,23 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>My javascript Documents</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style type="text/tailwindcss">
+    h1 {
+      @apply text-2xl font-bold pt-3 mb-4;
+    }
+
+    p {
+      @apply text-pink-500 text-xl mb-2 block;
+    }
+
+    code {
+      @apply bg-black rounded-lg p-4 text-white my-6 block text-pink-500;
+    }
+
+    code span {
+      @apply text-green-300;
+    }
+  </style>
 </head>
 <body> 
   <main class="flex md:flex-row flex-col">
@@ -31,10 +48,57 @@
       </nav>
     </aside>
     <section class="p-6">
-      <h1 class="text-2xl font-bold pt-3 mb-4">Variables</h1>
-      <p class="text-pink-500 text-xl mb-2">Las variables son basicamente almacenamientos, donde guardaremos x tipos de datos que necesitemos</p>
-      <p class="text-pink-500 text-xl font-medium mb-2">Check console.log</p>
-      
+      <h1>Variables</h1>
+      <p>Las variables son basicamente almacenamientos, donde guardaremos x tipos de datos que necesitemos</p>
+      <p class="font-medium">Check console.log</p>
+      <p>Las variables son basicamente almacenamientos, donde guardaremos x tipos de datos que necesitemos</p>
+      <code>
+        <span>var producto</span> = "Monitor de 24 pulgadas";
+      </code>
+      <p>De esta manera inicias una variable y le asignas un valor. Tambien puedes  inicializar una variable sin valor y asignarlo despues</p>
+      <code>
+        <span>var disponible;</span>
+        <br>
+        <span>disponible</span> = true;
+      </code>
+      <p><b>Las variables no pueden iniciar con numeros</b></p>
+      <p>Algo que hay que tener bastante pendiente es que las variables se pueden reasignar, para esto existen cierto tipos de variables que son:</p>
+      <code>
+        <span>var name;</span>
+        <br>
+        <span>let name;</span>
+        <br>
+        <span>const name</span> = "My name";
+      </code>
+      <h2 class="text-xl font-bold pt-3 mb-4">Las variables var y let</h2>
+      <p>Pueden ser reasignadas, practicamente son iguales. Las variables <b>Let</b> son nuevas de ES6 y si ambas se parecen pero tienen ciertas diferencias.</p>
+      <p><b>LET:</b> al igual que var la variable <b>let</b> puede ser actualizada dentro del mismo bloque donde se utilize. Una variable <b>let</b> no puede ser re-declarada dentro de su ambito </p>
+      <code>
+        <span>let saludar = </span> "dice Hola";
+        <br>
+        <span>saludar = </span> "dice hola tambien";
+      </code>
+      <p class="text-red">Esto va a devolver un error diciendo que <b>"Saludar"</b> ya a sido declarado.</p>
+      <p>Pero a esto me refiero que puede ser reasignada dentro de su mismo ambito</p>
+      <code>
+        <span>let saludar</span> = "dice hola";
+        <br>
+        if(true) {
+          <br>
+          <span>let saludar = </span> "dice hola tambien";
+          <br>
+          console.log(saludar); <span>// "dice hola tambien"</span>
+          <br>
+        }
+        <br>
+        console.log(saludar); <span>// "Dice hola"</span>
+      </code>
+      <p>A diferencia de <b>var</b> aqui no tendremos que preocuparnos de errores ya que ambar instancias son tratadas como diferentes.</p>
+      <h2 class="text-xl font-bold pt-3 mb-4">Const</h2>
+      <p>Estas variables mantienen sus valores. Se pueden acceder a ellas dentro del bloque en el que fueron declaradas. No pueden actualizar ni volver a declarar. Es basicamente lo contrario de
+        que hemos visto anteriormente.
+      </p>
+      <a>Ejemplos tomados en este enlace y mejor descripcion del tema (click aqui)</a>
     </section>
   </main>
   <script src="./js/variables.js"></script>

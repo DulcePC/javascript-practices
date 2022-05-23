@@ -6,6 +6,23 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>My javascript Documents</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style type="text/tailwindcss">
+    h1 {
+      @apply text-2xl font-bold pt-3 mb-4;
+    }
+    
+    p {
+      @apply text-pink-500 text-xl mb-2 block;
+    }
+
+    code {
+      @apply bg-black rounded-lg p-4 text-white my-6 block;
+    }
+
+    code span {
+      @apply text-green-300;
+    }
+  </style>
 </head>
 <body> 
   <main class="flex md:flex-row flex-col">
@@ -31,9 +48,8 @@
       </nav>
     </aside>
     <section class="p-6">
-      <h1 class="text-2xl font-bold pt-3">All practices are in console.log or dom</h1>
-      <p class="text-pink-500 text-xl">On this doc im going to write all course of javascript i will taking, also writing just a small document in the way i understand this themes.</p>
-
+      <h1>All practices are in console.log or dom</h1>
+      <p>On this doc im going to write all course of javascript i will taking, also writing just a small document in the way i understand this themes.</p>
     </section>
   </main>
   <!-- <script src="array.js"></script> -->
