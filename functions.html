@@ -32,7 +32,7 @@
         <a href="variables.html" class="text-white font-medium text-base border-b border-white block py-3">Variables</a>
         <a href="#" class="text-white font-medium text-base border-b border-white block py-3">Arrays</a>
         <a href="conditionals.html" class="text-white font-medium text-base border-b border-white block py-3">conditionals</a>
-        <a href="functions.html" class="text-white font-medium text-base border-b border-white block py-3">Functions</a>
+        <a href="functions" class="text-white font-medium text-base border-b border-white block py-3">Functions</a>
         <a href="#" class="text-white font-medium text-base border-b border-white block py-3">Scope</a>
         <a href="#" class="text-white font-medium text-base border-b border-white block py-3">ForEach</a>
         <a href="#" class="text-white font-medium text-base border-b border-white block py-3">Filter</a>
@@ -40,7 +40,7 @@
         <a href="#" class="text-white font-medium text-base border-b border-white block py-3">Strings</a>
         <a href="#" class="text-white font-medium text-base border-b border-white block py-3">Numbers</a>
         <a href="#" class="text-white font-medium text-base border-b border-white block py-3">Operators</a>
-        <a href="#" class="text-white font-medium text-base border-b border-white block py-3">Objects/a>
+        <a href="#" class="text-white font-medium text-base border-b border-white block py-3">Objects</a>
         <a href="#" class="text-white font-medium text-base border-b border-white block py-3">Loops</a>
         <a href="#" class="text-white font-medium text-base border-b border-white block py-3">DOM</a>
         <a href="#" class="text-white font-medium text-base border-b border-white block py-3">Events</a>
@@ -49,27 +49,23 @@
       </nav>
     </aside>
     <section class="p-6">
-      <h1>Condicionales</h1>
+      <h1>Funciones</h1>
+      <p>Las funciones son ordenes de procesos de se deben ejecutar</p>
+      <p>Procedimientos para realizar x accion y/o tarea. Las funciones siempre deben retornar algo.</p>
       <code>
-        <span>var producto</span> = "Monitor de 24 pulgadas";
-      </code>
-      <p>Las condicionales podriamos decir que son "funciones" que dependiendo de si cumplen o no la condicion este va a devolver x resultado</p>
-      <p>Esto es basicamente una estructura para tomar decisiones.</p>
-      <code>
-        <span>if (edad > 18) { </span>
-          <br>
-          alert("puedes ver esta página para adultos")
-          <br>
-        <span> else {</span>
-          <br>
-          alert("no puedes ver esto")
-          <br>
+        <span>function addTwo(number) {</span><br>
+          <span class="pl-4">return</span> number + 2;<br>
         <span>}</span>
+        <br>
+        <br>
+        <span>addTwo(3);</span>
       </code>
-      <p>Esta condicion son evaluadas como verdadera o falsa</p>
-      <a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/if...else" class="text-blue-600 underline text-xl block my-3">Ejemplos tomados en este enlace y mejor descripcion del tema (click aqui)</a>
+      <p>Estos reciben variables como <b>parametros</b>. Los parametros son como variables que reciben cualquier valor que necesites para realizar tu procedimiento, a su ves tenemos los <b>argumentos</b> que son los valores que le enviamos a nuestra funcion una vez ya han sido declaradas.</p>
+      <p class="underline">Revisar functions.js</p>
+      <p>En el ejemplo planteado arriba, los parametros son lo que estan dentro del parentesis <b>(number)</b> y el argumento viene siendo cuando llamamos la funcion <b>addTwo(3)</b>.</p>
+      <!-- <a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/if...else" class="text-blue-600 underline text-xl block my-3">Ejemplos tomados en este enlace y mejor descripcion del tema (click aqui)</a> -->
     </section>
   </main>
-  <script src="./js/conditionals.js"></script>
+  <script src="./js/functions.js"></script>
 </body>
 </html>
