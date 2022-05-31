@@ -10,27 +10,29 @@
     h1 {
       @apply text-2xl font-bold pt-3 mb-4;
     }
-    
+
     p {
       @apply text-pink-500 text-xl mb-2 block;
     }
 
     code {
-      @apply bg-black rounded-lg p-4 text-white my-6 block;
+      @apply bg-black rounded-lg p-4 text-white my-6 block text-pink-500;
     }
 
     code span {
       @apply text-green-300;
     }
+
+    
   </style>
 </head>
-<body>
+<body> 
   <main class="flex md:flex-row flex-col">
     <aside class="bg-pink-500 w-96 min-h-screen flex-none p-6">
       <nav class="w-full">
         <a href="variables.html" class="text-white font-medium text-base border-b border-white block py-3">Variables</a>
         <a href="#" class="text-white font-medium text-base border-b border-white block py-3">Arrays</a>
-        <a href="conditionals.html" class="text-white font-medium text-base border-b border-white block py-3">conditionals</a>
+        <a href="#" class="text-white font-medium text-base border-b border-white block py-3">conditionals</a>
         <a href="#" class="text-white font-medium text-base border-b border-white block py-3">Functions</a>
         <a href="#" class="text-white font-medium text-base border-b border-white block py-3">Scope</a>
         <a href="#" class="text-white font-medium text-base border-b border-white block py-3">ForEach</a>
@@ -39,7 +41,7 @@
         <a href="#" class="text-white font-medium text-base border-b border-white block py-3">Strings</a>
         <a href="#" class="text-white font-medium text-base border-b border-white block py-3">Numbers</a>
         <a href="#" class="text-white font-medium text-base border-b border-white block py-3">Operators</a>
-        <a href="#" class="text-white font-medium text-base border-b border-white block py-3">Objects</a>
+        <a href="#" class="text-white font-medium text-base border-b border-white block py-3">Objects/a>
         <a href="#" class="text-white font-medium text-base border-b border-white block py-3">Loops</a>
         <a href="#" class="text-white font-medium text-base border-b border-white block py-3">DOM</a>
         <a href="#" class="text-white font-medium text-base border-b border-white block py-3">Events</a>
@@ -48,28 +50,14 @@
       </nav>
     </aside>
     <section class="p-6">
-      <h1>All practices are in console.log or dom</h1>
-      <p>On this doc im going to write all course of javascript i will taking, also writing just a small document in the way i understand this themes.</p>
+      <h1>Condicionales</h1>
+      
+      <code>
+        <span>var producto</span> = "Monitor de 24 pulgadas";
+      </code>
+      <a class="text-blue-600 underline text-xl block my-3">Ejemplos tomados en este enlace y mejor descripcion del tema (click aqui)</a>
     </section>
   </main>
-  <!-- <script src="array.js"></script> -->
-  <!-- <script src="conditionals.js"></script> -->
-  <!-- <script src="exercise.js"></script> -->
-  <!-- <script src="functions.js"></script> -->
-  <!-- <script src="scope.js"></script> -->
-  <!-- <script src="scope-exercise.js"></script> -->
-  <!-- <script src="forEach.js"></script> -->
-  <!-- <script src="filter.js"></script> -->
-  <!-- <script src="map.js"></script> -->
-  <!-- <script src="variables.js"></script> -->
-  <!-- <script src="strings.js"></script> -->
-  <!-- <script src="numbers.js"></script>
-  <script src="operators.js"></script> -->
-  <!-- <script src="booleans.js"></script> -->
-  <!-- <script src="objects.js"></script> -->
-  <!-- <script src="loop.js"></script> -->
-  <!-- <script src="dom.js"></script> -->
-  <!-- <script src="events.js"></script> -->
-  <!-- <script src="promise.js"></script> -->
+  <script src="./js/variables.js"></script>
 </body>
 </html>
