@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My javascript Documents</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style type="text/tailwindcss">
+    h1 {
+      @apply text-2xl font-bold pt-3 mb-4;
+    }
+
+    p {
+      @apply text-pink-500 text-xl mb-2 block;
+    }
+
+    code {
+      @apply bg-black rounded-lg p-4 text-white my-6 block text-pink-500;
+    }
+
+    code span {
+      @apply text-green-300;
+    } 
+  </style>
+</head>
+<body> 
+  <main class="flex md:flex-row flex-col">
+    <aside class="bg-pink-500 w-96 min-h-screen flex-none p-6">
+      <nav class="w-full">
+        <a href="index.html" class="text-white font-medium text-base border-b border-white block py-3">Inicio</a>
+        <a href="variables.html" class="text-white font-medium text-base border-b border-white block py-3">Variables</a>
+        <a href="arrays.html" class="text-white font-medium text-base border-b border-white block py-3">Arrays</a>
+        <a href="conditionals.html" class="text-white font-medium text-base border-b border-white block py-3">conditionals</a>
+        <a href="functions" class="text-white font-medium text-base border-b border-white block py-3">Functions</a>
+        <a href="scope.html" class="text-white font-medium text-base border-b border-white block py-3">Scope</a>
+        <a href="for-each.html" class="text-white font-medium text-base border-b border-white block py-3">ForEach</a>
+        <a href="filter.html" class="text-white font-medium text-base border-b border-white block py-3">Filter</a>
+        <a href="map.html" class="text-white font-medium text-base border-b border-white block py-3">Map</a>
+        <a href="string.html" class="text-white font-medium text-base border-b border-white block py-3">Strings and Numbers</a>
+        <a href="operators.html" class="text-white font-medium text-base border-b border-white block py-3">Operators</a>
+        <a href="objects.html" class="text-white font-medium text-base border-b border-white block py-3">Objects</a>
+        <a href="loops.html" class="text-white font-medium text-base border-b border-white block py-3">Loops</a>
+        <a href="dom.html" class="text-white font-medium text-base border-b border-white block py-3">DOM</a>
+        <a href="events.html" class="text-white font-medium text-base border-b border-white block py-3">Events</a>
+        <a href="promise.htmk" class="text-white font-medium text-base border-b border-white block py-3">Promise</a>
+        <a href="#" class="text-white font-medium text-base border-b border-white block py-3">Platzi practices</a>
+      </nav>
+    </aside>
+    <section class="p-6">
+      <h1>Scope</h1>
+      <p>Los arrays son listas de informacion en la cual podemos utilizar ciertos metodos para obtener sus valores, estos son:</p>
+      <ul class="list-disc pl-4 text-pink-700 capitalize">
+        <li class="mb-2">push</li>
+        <li class="mb-2">pop</li>
+        <li class="mb-2">slice</li>
+        <li class="mb-2">Map</li>
+        <li class="mb-2">Filter</li>
+        <li class="mb-2">forEach</li>
+        <li class="mb-2">fill</li>
+      </ul>
+      <p>Son variables especiales que pueden almacenar mas de un valor y tambien puede contener valores de diferentes tipos.</p>
+      <code>
+        <span>var frutas = ["manzana","banana", 40];</span>
+      </code>
+      <h2 class="text-xl font-bold mb-4 block">Veamos algunos ejemplos de los arrays methods:</h2>
+      <p>El metodo <b>pop()</b> elimina el ultimo elemento del array.</p>
+      <p>El metodo <b>push()</b> Agrega un elemento al array pero al final.</p>
+      <p>El metodo <b>unshift()</b> Agrega un elemento al array pero al inicio.</p>
+      <p>Los demas metodos los veremos de manera mas profunda en los siguientes enlaces.</p>
+    </section>
+  </main>
+  <script src="./js/scope.js"></script>
+</body>
+</html>
