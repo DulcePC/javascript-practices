@@ -48,21 +48,26 @@
       </nav>
     </aside>
     <section class="p-6">
-      <h1>Funciones</h1>
-      <p>Las funciones son ordenes de procesos de se deben ejecutar</p>
-      <p>Procedimientos para realizar x accion y/o tarea. Las funciones siempre deben retornar algo.</p>
+      <h1>Arrays</h1>
+      <p>Los arrays son listas de informacion en la cual podemos utilizar ciertos metodos para obtener sus valores, estos son:</p>
+      <ul class="list-disc pl-4 text-pink-700 capitalize">
+        <li class="mb-2">push</li>
+        <li class="mb-2">pop</li>
+        <li class="mb-2">slice</li>
+        <li class="mb-2">Map</li>
+        <li class="mb-2">Filter</li>
+        <li class="mb-2">forEach</li>
+        <li class="mb-2">fill</li>
+      </ul>
+      <p>Son variables especiales que pueden almacenar mas de un valor y tambien puede contener valores de diferentes tipos.</p>
       <code>
-        <span>function addTwo(number) {</span><br>
-          <span class="pl-4">return</span> number + 2;<br>
-        <span>}</span>
-        <br>
-        <br>
-        <span>addTwo(3);</span>
+        <span>var frutas = ["manzana","banana", 40];</span>
       </code>
-      <p>Estos reciben variables como <b>parametros</b>. Los parametros son como variables que reciben cualquier valor que necesites para realizar tu procedimiento, a su ves tenemos los <b>argumentos</b> que son los valores que le enviamos a nuestra funcion una vez ya han sido declaradas.</p>
-      <p class="underline">Revisar functions.js</p>
-      <p>En el ejemplo planteado arriba, los parametros son lo que estan dentro del parentesis <b>(number)</b> y el argumento viene siendo cuando llamamos la funcion <b>addTwo(3)</b>.</p>
-      <!-- <a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/if...else" class="text-blue-600 underline text-xl block my-3">Ejemplos tomados en este enlace y mejor descripcion del tema (click aqui)</a> -->
+      <h2 class="text-xl font-bold mb-4 block">Veamos algunos ejemplos de los arrays methods:</h2>
+      <p>El metodo <b>pop()</b> elimina el ultimo elemento del array.</p>
+      <p>El metodo <b>push()</b> Agrega un elemento al array pero al final.</p>
+      <p>El metodo <b>unshift()</b> Agrega un elemento al array pero al inicio.</p>
+      <p>Los demas metodos los veremos de manera mas profunda en los siguientes enlaces.</p>
     </section>
   </main>
   <script src="./js/functions.js"></script>
