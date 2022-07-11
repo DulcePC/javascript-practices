@@ -12,15 +12,6 @@ console.log("");
 //Filter thins out from array
 let canDrink = [];
 
-//this its with for loop
-for (let i = 0; i < ageFilter.length; i++) {
-  if(ageFilter[i] > 18) {
-    console.log(ageFilter[i]);
-    canDrink.push(ageFilter);
-    console.log(canDrink);
-  }
-}
-
 console.log("");
 //this its with filter
 console.log("this its filter")
@@ -39,7 +30,7 @@ console.log(canDrinkClean);
 console.log("");
 
 const ConfirmCategory = companiesFilter.filter(function(categorys) {
-  if ( categorys === "secretary") {
+  if ( categorys.category === "Secretary") {
    return true;
   }
 })
